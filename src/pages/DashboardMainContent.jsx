@@ -1,49 +1,46 @@
-import Activity from "../components/ActivityFeed"; 
-import Anatomy from "../components/AnatomySection";
-import Appointment from "../components/SimpleAppointmentCard";
-import Calender from "../components/CalendarView";
-import MedicalCards from "../components/HealthStatusCards";
-import Schedule from "../components/UpcomingSchedule";
-import SearchBar from "../components/SearchBar";
 import SideBar from "../components/SideBar";
+import SearchBar from "../components/SearchBar";
+import AnatomySection from "../components/AnatomySection";
+import HealthStatusCards from "../components/HealthStatusCards";
+import ActivityFeed from "../components/ActivityFeed";
+import CalendarView from "../components/CalendarView";
+import SimpleAppointmentCard from "../components/SimpleAppointmentCard";
+import UpcomingSchedule from "../components/UpcomingSchedule";
 
 function DashboardMainContent() {
   return (
-    <>
-      <div className="container-fluid d-flex dashboard-layout">
+    <div className="dashboard-wrapper d-flex">
+      {/* Sidebar */}
+      <div className="sidebar-col">
+        <SideBar />
+      </div>
 
-        {/* Left Sidebar */}
-        <div className="row">
-          <div className="sidebar-col  col-md-2">
-            <SideBar />
+      {/* Center content */}
+      <div className="middle-col flex-grow-1 px-3 py-4">
+        <SearchBar />
+
+        <div className="d-flex flex-wrap gap-3 align-items-start mt-4">
+          <div className="flex-grow-1">
+            <AnatomySection />
           </div>
-
-          {/* Center Section*/}
-          <div className="middle-col col-md-5">
-
-            <div className="my-4 ">
-              <SearchBar />
-            </div>
-            
- 
-            <div className="d-flex justify-content-between center-pair-wrapper">
-              <Anatomy />
-              <MedicalCards />
-            </div>
-
-            <Activity />
+          <div style={{ width: '260px' }}>
+            <HealthStatusCards />
           </div>
+        </div>
 
-          {/* Right component  */}
-          <div className="right-component col-md-4">
-            <Calender />
-            <Appointment />
-            <Schedule />
-          </div>
-
+        <div className="mt-4">
+          <ActivityFeed />
         </div>
       </div>
-    </>
+
+      {/* Right content */}
+      <div className="right-component px-3 py-4">
+        <CalendarView />
+        <SimpleAppointmentCard />
+        <UpcomingSchedule />
+      </div>
+    </div>
   );
 }
+
 export default DashboardMainContent;
