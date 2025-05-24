@@ -24,7 +24,7 @@ function Dashboard() {
   </div>
 
   {/* Center Section: Anatomy and Medical Cards Side-by-Side */}
-  <div className="d-flex flex-wrap">
+  <div className="d-flex justify-content-between center-pair-wrapper">
     <Anatomy />
     <MedicalCards />
   </div>

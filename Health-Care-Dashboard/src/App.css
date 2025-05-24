@@ -49,12 +49,18 @@
 }
 
 /*Anatomy style*/
+.center-pair-wrapper {
+  width: 100%;
+  max-width: 600px;
+  gap: 20px;
+}
+
 .anatomy-wrapper {
+  width: 280px;
   background-color: #f5f7fa;
 }
 
 .anatomy-card {
-  width: 300px;
   background-color: #fff;
   border-radius: 1.5rem;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
@@ -91,9 +97,18 @@
 }
 /* ==================== */
 /* medical-card */
-.medical-card{
-  margin: 0;
+.medical-card-wrapper {
+  width: 280px;
 }
+
+.medical-card {
+  width: 100%;
+  padding: 20px;
+  border-radius: 16px;
+  background-color: #fff;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+}
+
 
 /* Activity style */
 .activity-card {
@@ -173,3 +188,4 @@
   padding: 1rem;
   font-size: 0.9rem;
 }
+ 

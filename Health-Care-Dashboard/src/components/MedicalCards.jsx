@@ -10,9 +10,10 @@ function MedicalCards (){
 
   return (
     <>
-    <div className="medical-card container py-3" style={{ maxWidth: '250px' }}>
+    <div className="medical-card-wrapper">
+    <div className="medical-card" >
       {data.map((item, index) => (
-        <div key={index} className="card p-3 mb-3 shadow-sm medical-card">
+        <div key={index} className="card p-3 mb-3  medical-card">
           <div className="d-flex align-items-center">
             <span className="fs-3 me-2">{item.emoji}</span>
             <h6 className="mb-0 fw-bold text-primary">{item.title}</h6>
@@ -27,6 +28,7 @@ function MedicalCards (){
           </div>
         </div>
       ))}
+    </div>
     </div>
     </>
   );
