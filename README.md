@@ -5,7 +5,7 @@ This is a responsive Healthcare Dashboard built using **React.js** and **Bootstr
 
 ## 📸 Screenshot
 
-![Healthcare Dashboard Screenshot](./public/screenshot.jpg)
+![Healthcare Dashboard Screenshot](./public/ss.jpg)
 
 ---
 
