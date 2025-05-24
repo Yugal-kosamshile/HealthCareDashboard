@@ -1,16 +1,100 @@
 # HealthCareDashboard
-This project is a frontend-only React implementation of a healthcare dashboard, created as part of a technical assessment.
+This is a responsive Healthcare Dashboard built using **React.js** and **Bootstrap**. The dashboard includes sidebar navigation, health status visualization, upcoming schedules, a calendar, and appointment tracking features.
 
-# React + Vite
+---
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📸 Screenshot
 
-Currently, two official plugins are available:
+![Healthcare Dashboard Screenshot](./public/screenshot.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 📁 Project Structure
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```
 
+src/
+├── components/
+│   ├── ActivityFeed.jsx
+│   ├── AnatomySection.jsx
+│   ├── CalendarView\.jsx
+│   ├── HealthStatusCards.jsx
+│   ├── SearchBar.jsx
+│   ├── SideBar.jsx
+│   ├── SimpleAppointmentCard.jsx
+│   └── UpcomingSchedule.jsx
+├── pages/
+│   └── DashboardMainContent.jsx
+├── App.jsx
+├── index.js
+└── styles.css
+
+````
+
+---
+
+## ⚙️ Features
+
+- 🧭 Sidebar navigation with icons
+- 🔍 Search bar with notification icon
+- 🫁 Health anatomy visualization
+- 📊 Activity feed (bar chart)
+- 📅 Calendar with selectable time slots
+- 🗓️ Appointment cards
+- 📌 Upcoming schedule preview
+- 📱 Responsive and clean UI
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/your-username/healthcare-dashboard.git
+cd healthcare-dashboard
+````
+
+### 2. Install Dependencies
+
+Make sure you have [Node.js](https://nodejs.org/) installed. Then run:
+
+```bash
+npm install
+```
+
+### 3. Start the Development Server
+
+```bash
+npm start
+```
+
+The app will be available at `http://localhost:3000`.
+
+---
+
+## 📦 Dependencies
+
+* **React.js**
+* **Bootstrap 5**
+* **Font Awesome**
+
+---
+
+## 📐 Layout Structure
+
+The dashboard layout is divided into 12 parts using flexbox:
+
+* **Left Sidebar** – 2 columns (16.67%)
+* **Middle Section** – 5 columns (41.67%)
+* **Right Section** – 5 columns (41.67%)
+
+Custom CSS is used for styling alongside Bootstrap utility classes.
+
+---
+
+## 🙌 Credits
+
+Designed & Developed by **YugalK** ❤️
+
+---
