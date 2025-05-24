@@ -12,23 +12,23 @@ function SideBar() {
           <p className="text-muted small mb-2">General</p>
           <ul className="list-unstyled">
             <li className="sidebar-item active">
-                <i class="fa-solid fa-border-all"></i>
+              <i class="fa-solid fa-border-all"></i>
               <span className="ms-2">Dashboard</span>
             </li>
             <li className="sidebar-item">
-                <i class="fa-solid fa-right-left"></i>
+              <i class="fa-solid fa-right-left"></i>
               <span className="ms-2">History</span>
             </li>
             <li className="sidebar-item">
-                <i class="fa-solid fa-calendar-days"></i>
+              <i class="fa-solid fa-calendar-days"></i>
               <span className="ms-2">Calendar</span>
             </li>
-            <li className="sidebar-item"> 
+            <li className="sidebar-item">
               <i class="fa-solid fa-briefcase-medical"></i>
               <span className="ms-2">Appointments</span>
             </li>
             <li className="sidebar-item">
-                <i class="fa-solid fa-chart-line"></i>
+              <i class="fa-solid fa-chart-line"></i>
               <span className="ms-2">Statistics</span>
             </li>
           </ul>
@@ -38,11 +38,11 @@ function SideBar() {
           <p className="text-muted small mb-2">Tools</p>
           <ul className="list-unstyled">
             <li className="sidebar-item">
-                <i class="fa-solid fa-comment-dots"></i>
+              <i class="fa-solid fa-comment-dots"></i>
               <span className="ms-2">Chat</span>
             </li>
             <li className="sidebar-item">
-                <i class="fa-solid fa-phone"></i>
+              <i class="fa-solid fa-phone"></i>
               <span className="ms-2">Support</span>
             </li>
           </ul>

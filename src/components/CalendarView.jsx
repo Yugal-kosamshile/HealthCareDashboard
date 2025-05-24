@@ -8,7 +8,21 @@ const calendarData = [
   { day: "Sun", date: 31, times: ["09:00", "10:00", "11:00"], disabled: true }
 ];
 
-function CalendarView () {
+const calendar = calendarData.map((item, idx) => (
+  <div key={idx} className={`flex-grow-1 px-1 ${item.disabled ? "text-muted" : ""}`}>
+    <div className="fw-bold">{item.day}</div>
+    <div className={`fw-bold ${item.disabled ? "text-secondary" : "text-dark"}`}>
+      {item.date}</div>
+    <div className="mt-1">
+      {item.times.map((time, i) => (
+        <div key={i} className={`time-slot mb-1 ${item.selected === time ? "selected" : ""}`}>
+          {time}
+        </div>
+      ))}
+    </div>
+  </div>
+))
+function CalendarView() {
   return (
     <div className="calendar-container">
       <div className="d-flex justify-content-between align-items-center mb-4">
@@ -25,19 +39,7 @@ function CalendarView () {
       </div>
 
       <div className="d-flex text-center">
-        {calendarData.map((item, idx) => (
-          <div key={idx} className={`flex-grow-1 px-1 ${item.disabled ? "text-muted" : ""}`}>
-            <div className="fw-bold">{item.day}</div>
-            <div className={`fw-bold ${item.disabled ? "text-secondary" : "text-dark"}`}>{item.date}</div>
-            <div className="mt-1">
-              {item.times.map((time, i) => (
-                <div key={i} className={`time-slot mb-1 ${item.selected === time ? "selected" : ""}`}>
-                  {time}
-                </div>
-              ))}
-            </div>
-          </div>
-        ))}
+        {calendar}
       </div>
     </div>
   );

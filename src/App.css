@@ -13,7 +13,7 @@ body {
   height: 100%;
 }
 
-/* Left component  */
+/*============== Left component ================ */
 .sidebar-col{
   margin-right: 20px;
 }
@@ -57,31 +57,25 @@ body {
 
 /* ===========Middle component==================== */
 .middle-col{ 
-  background-color: #ffffff; 
-  padding: 20px;
-  margin: 30px;
+  background-color: #ffffff;  
 }
+
 /* search bar */
 .search-bar{
-    width: 550px;
+    width: auto;
 }
 .dash-head, .dash-para{
   color: #0f4173;
-}
-/*Anatomy style*/
-.center-pair-wrapper {
-  width: 100%;
-  max-width: 800px; 
+  margin-top: 1rem;
 }
 
+/*Anatomy style*/ 
 .anatomy-wrapper {
   background-color: #f5f7fa;
 }
 
 .anatomy-card {
-  background-color: #fff;
-  border-radius: 1.5rem;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  background-color: #ffffff00;
   text-align: center;
 }
 
@@ -103,17 +97,18 @@ body {
 }
 
 .heart-label {
-  top: 100px;
-  right: -20px;
+  top: 110px;
+  right: -25px;
   background: #4e60ff;
 }
 
 .leg-label {
-  top: 230px;
-  left: -40px;
+  top: 270px;
+  left: -30px;
   background: #17c1e8;
 }
-/* ==================== */
+
+/* ======== Middle components ============ */
 /* medical-card */
 
 .medical-card-wrapper {
@@ -126,14 +121,13 @@ body {
   border-radius: 16px;
   background-color: #fff;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
-}
-
+} 
 
 /* Activity style */
 .activity-card {
   background-color: #f9fbfd;
   border-radius: 16px;
-  max-width: 600px;
+  width: auto;
 }
 
 .bar-group .bar {
@@ -152,7 +146,7 @@ body {
 .bar-2 {
   background-color: #5c6ac4;
 }
-/* ==============Right components================= */
+/* ============== Right components ================= */
  .right-component{
   background-color: #f1f4ff; 
  }
@@ -161,7 +155,7 @@ body {
   padding: 20px;
   margin-top: 20px; 
   border-radius: 24px;
-  max-width: 480px;
+  max-width: 600px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
@@ -178,18 +172,16 @@ body {
   color: #fff;
   font-weight: bold;
 }
-
-/* ================================== */
+ 
 /* appointment style */
 .appointment-cards-container {
   display: flex;  
-  width: 420px;
+  width: 600px;
   gap: 1rem;
 }
 
-
 .dentist-card, .physiotherapy-card {
-  min-width: 150px;
+  min-width: 290px;
   border-radius: 16px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
 }
@@ -203,22 +195,24 @@ body {
   color: #333;
   background-color: #d4ddff; 
 }
-
-
-/* ================================ */
+ 
 /* .schedule  container */
 .schedule-container { 
-  width: 420px;
+  width: 610px;
   border-radius: 24px;
   padding: 1.5rem;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
 }
 
-.event-card {
-  min-width: 180px;
+.event-card { 
   background-color: #d4ddff;
   border-radius: 16px;
   padding: 1rem;
   font-size: 0.9rem;
 }
- /* ======================================= */
+
+.yugal{
+  margin-top: 6rem;
+  text-align: right;
+  font-size: 10px;
+}

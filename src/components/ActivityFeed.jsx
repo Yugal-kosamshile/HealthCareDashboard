@@ -10,7 +10,22 @@ const chartData = [
   [30, 40, 20],
 ];
 
-function ActivityFeed () {
+const acitity = chartData.map((bars, index) => (
+  <div key={index} className="text-center">
+    <div className="bar-group d-flex flex-column-reverse align-items-center gap-1 mb-1">
+      {bars.map((height, i) => (
+        <div
+          key={i}
+          className={`bar bar-${i}`}
+          style={{ height: `${height}px` }}
+        ></div>
+      ))}
+    </div>
+    <small className="text-muted">{days[index]}</small>
+  </div>
+))
+
+function ActivityFeed() {
   return (
     <div className="activity-card p-4 rounded shadow-sm">
       <div className="d-flex justify-content-between mb-3">
@@ -19,23 +34,10 @@ function ActivityFeed () {
       </div>
 
       <div className="d-flex justify-content-between align-items-end">
-        {chartData.map((bars, index) => (
-          <div key={index} className="text-center">
-            <div className="bar-group d-flex flex-column-reverse align-items-center gap-1 mb-1">
-              {bars.map((height, i) => (
-                <div
-                  key={i}
-                  className={`bar bar-${i}`}
-                  style={{ height: `${height}px` }}
-                ></div>
-              ))}
-            </div>
-            <small className="text-muted">{days[index]}</small>
-          </div>
-        ))}
+        {acitity}
       </div>
     </div>
   );
 };
 
-export default ActivityFeed ;
+export default ActivityFeed;

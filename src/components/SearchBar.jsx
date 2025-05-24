@@ -15,7 +15,9 @@ function SearchBar() {
 
       <div className=" d-flex justify-content-between align-items-center">
         <h1 className="dash-head">Dashboard</h1>
-        <p className="dash-para">This week <i className="fa-solid fa-chevron-down"></i></p>
+        <p className="dash-para">This week
+          <i className="fa-solid fa-chevron-down"></i>
+        </p>
       </div>
     </>
   );
