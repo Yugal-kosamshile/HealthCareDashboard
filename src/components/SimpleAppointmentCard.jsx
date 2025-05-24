@@ -1,4 +1,4 @@
-function Appointment() {
+function SimpleAppointmentCard () {
 
     return (
       <>
@@ -23,4 +23,4 @@ function Appointment() {
   );
 }
 
-export default Appointment;
+export default SimpleAppointmentCard ;

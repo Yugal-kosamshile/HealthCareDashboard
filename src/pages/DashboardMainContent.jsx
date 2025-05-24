@@ -1,13 +1,13 @@
-import Activity from "../components/Activity"; 
-import Anatomy from "../components/Anatomy";
-import Appointment from "../components/Apointment";
-import Calender from "../components/Calender";
-import MedicalCards from "../components/MedicalCards";
-import Schedule from "../components/Schedule";
+import Activity from "../components/ActivityFeed"; 
+import Anatomy from "../components/AnatomySection";
+import Appointment from "../components/SimpleAppointmentCard";
+import Calender from "../components/CalendarView";
+import MedicalCards from "../components/HealthStatusCards";
+import Schedule from "../components/UpcomingSchedule";
 import SearchBar from "../components/SearchBar";
 import SideBar from "../components/SideBar";
 
-function Dashboard() {
+function DashboardMainContent() {
   return (
     <>
       <div className="container-fluid d-flex dashboard-layout">
@@ -46,4 +46,4 @@ function Dashboard() {
     </>
   );
 }
-export default Dashboard
+export default DashboardMainContent;

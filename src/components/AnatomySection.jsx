@@ -1,5 +1,5 @@
 
-function Anatomy() {
+function AnatomySection () {
 
     return (
         <div className="anatomy-wrapper d-flex justify-content-center align-items-center">
@@ -29,4 +29,4 @@ function Anatomy() {
     );
 };
 
-export default Anatomy;
+export default AnatomySection ;

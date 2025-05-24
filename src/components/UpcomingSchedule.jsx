@@ -1,4 +1,4 @@
-function Schedule(params) {
+function UpcomingSchedule (params) {
     const scheduleData = [
   {
     day: "Thursday",
@@ -41,4 +41,4 @@ return (
   );
 }
 
-export default Schedule;
+export default UpcomingSchedule ;

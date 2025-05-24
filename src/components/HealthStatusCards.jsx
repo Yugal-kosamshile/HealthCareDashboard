@@ -1,7 +1,7 @@
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-function MedicalCards (){
+function HealthStatusCards  (){
   const data = [
     { emoji: '🫁', title: 'Lungs', date: '26 Okt 2021', progress: 60, color: '#dc3545' },
     { emoji: '🦷', title: 'Teeth', date: '26 Okt 2021', progress: 80, color: '#20c997' },
@@ -34,4 +34,4 @@ function MedicalCards (){
   );
 };
 
-export default MedicalCards;
+export default HealthStatusCards ;

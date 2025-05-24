@@ -8,7 +8,7 @@ const calendarData = [
   { day: "Sun", date: 31, times: ["09:00", "10:00", "11:00"], disabled: true }
 ];
 
-function Calender() {
+function CalendarView () {
   return (
     <div className="calendar-container">
       <div className="d-flex justify-content-between align-items-center mb-4">
@@ -43,4 +43,4 @@ function Calender() {
   );
 }
 
-export default Calender;
+export default CalendarView;

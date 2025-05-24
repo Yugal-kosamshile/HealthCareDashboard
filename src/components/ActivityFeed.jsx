@@ -10,7 +10,7 @@ const chartData = [
   [30, 40, 20],
 ];
 
-function Activity() {
+function ActivityFeed () {
   return (
     <div className="activity-card p-4 rounded shadow-sm">
       <div className="d-flex justify-content-between mb-3">
@@ -38,4 +38,4 @@ function Activity() {
   );
 };
 
-export default Activity;
+export default ActivityFeed ;
