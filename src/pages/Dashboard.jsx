@@ -1,4 +1,4 @@
-import Activity from "../components/Activity";
+import Activity from "../components/Activity"; 
 import Anatomy from "../components/Anatomy";
 import Appointment from "../components/Apointment";
 import Calender from "../components/Calender";
