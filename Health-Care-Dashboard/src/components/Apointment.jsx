@@ -1,16 +1,17 @@
 function Appointment() {
 
     return (
-    <div className="d-flex gap-3 flex-wrap appointment-cards-container">
+      <>
+    <div className=" gap-3 my-5 appointment-cards-container">
       {/* Dentist Card */}
-      <div className="card dentist-card p-3 rounded-4">
+      <div className=" dentist-card p-3 rounded-4">
         <div className="fw-bold">Dentist 🦷</div>
         <div className="small my-1">09:00 - 11:00</div>
         <div className="small">Dr. Cameron Williamson</div>
       </div>
 
       {/* Physiotherapy Card */}
-      <div className="card physiotherapy-card p-3 rounded-4">
+      <div className=" physiotherapy-card p-3 rounded-4">
         <div className="fw-bold text-dark">
           Physiotherapy Appointment 💪
         </div>
@@ -18,6 +19,7 @@ function Appointment() {
         <div className="small text-muted">Dr. Kevin Djones</div>
       </div>
     </div>
+    </>
   );
 }
 

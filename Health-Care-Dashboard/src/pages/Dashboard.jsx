@@ -10,44 +10,39 @@ import SideBar from "../components/SideBar";
 function Dashboard() {
   return (
     <>
-     <div className="container-fluid dashboard-layout">
-      <div className="row">
+      <div className="container-fluid d-flex dashboard-layout">
+
         {/* Left Sidebar */}
-        <div className="col-md-2 col-lg-2 px-0 sidebar-col">
-          <SideBar />
+        <div className="row">
+          <div className="sidebar-col  col-md-2">
+            <SideBar />
+          </div>
+
+          {/* Center Section*/}
+          <div className="middle-col col-md-5">
+
+            <div className="my-4 ">
+              <SearchBar />
+            </div>
+            
+ 
+            <div className="d-flex justify-content-between center-pair-wrapper">
+              <Anatomy />
+              <MedicalCards />
+            </div>
+
+            <Activity />
+          </div>
+
+          {/* Right component  */}
+          <div className="right-component col-md-4">
+            <Calender />
+            <Appointment />
+            <Schedule />
+          </div>
+
         </div>
-
-<div className="col-md-7 col-lg-7 px-4 middle-col">
-  {/* Top: Search Bar */}
-  <div className="mb-4">
-    <SearchBar />
-  </div>
-
-  {/* Center Section: Anatomy and Medical Cards Side-by-Side */}
-  <div className="d-flex justify-content-between center-pair-wrapper">
-    <Anatomy />
-    <MedicalCards />
-  </div>
-
-  {/* Bottom: Activity Section */}
-  <Activity />
-</div>
-
-
-
-       <div className="col-md-3 col-lg-3 px-4 right-col d-flex flex-column gap-4">
-  {/* Calendar on top */}
-  <Calender />
-
-  {/* Appointment Cards below Calendar */}
-  <Appointment />
-
-  {/* Schedule at the bottom */}
-  <Schedule />
-</div>
-
       </div>
-    </div>
     </>
   );
 }

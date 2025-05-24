@@ -1,7 +1,7 @@
 
 function SideBar() {
   return (
-    <aside className="sidebar d-flex flex-column justify-content-between p-4">
+    <aside className="sidebar d-flex flex-column justify-content-between p-5">
       <div>
         <h1 className="logo mb-4">
           <span className="health">Health</span>

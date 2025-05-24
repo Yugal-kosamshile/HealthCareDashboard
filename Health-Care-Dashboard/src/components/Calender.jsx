@@ -10,7 +10,7 @@ const calendarData = [
 
 function Calender() {
   return (
-    <div className="calendar-container p-4 rounded shadow-sm bg-white mb-4">
+    <div className="calendar-container">
       <div className="d-flex justify-content-between align-items-center mb-4">
         <h6 className="fw-bold mb-0">October 2021</h6>
         <div className="d-flex align-items-center gap-2">
@@ -24,12 +24,12 @@ function Calender() {
         </div>
       </div>
 
-      <div className="d-flex justify-content-between calendar-days text-center">
+      <div className="d-flex text-center">
         {calendarData.map((item, idx) => (
-          <div key={idx} className={`flex-grow-1 px-2 ${item.disabled ? "text-muted" : ""}`}>
+          <div key={idx} className={`flex-grow-1 px-1 ${item.disabled ? "text-muted" : ""}`}>
             <div className="fw-bold">{item.day}</div>
             <div className={`fw-bold ${item.disabled ? "text-secondary" : "text-dark"}`}>{item.date}</div>
-            <div className="mt-2">
+            <div className="mt-1">
               {item.times.map((time, i) => (
                 <div key={i} className={`time-slot mb-1 ${item.selected === time ? "selected" : ""}`}>
                   {time}
